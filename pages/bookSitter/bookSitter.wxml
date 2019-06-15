@@ -1,0 +1,110 @@
+<!--pages/bookSitter/bookSitter.wxml-->
+<cu-custom bgColor="bg-gradual-blue" >
+  <view slot="backText">Back</view>
+  <view slot="content">Book a sitter</view>
+</cu-custom>
+<swiper class="card-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
+  <swiper-item wx:for="{{kidsInfo}}" wx:key class="{{cardCur==index?'cur':''}}">
+    <view class="swiper-item">
+      <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+      <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+    </view>
+  </swiper-item>
+</swiper>
+
+<!-- form for posting baby sitting -->
+<view class='formWraper'>  
+  <view id='formTitle'>I need a babysitter</view>
+  <form>
+    <view class="cu-form-group">
+      <view class="title">Date</view>
+      <picker mode="date" value="{{date}}" start="2015-09-01-00:00" end="2020-09-01-00:00" bindchange="DateChange">
+        <view class="picker">
+          {{date}}
+        </view>
+      </picker>
+    </view>
+    <view class="cu-form-group">
+      <view class="title">from</view>
+      <picker mode="time" value="{{time}}" start="09:01" end="19:01" bindchange="TimeChange">
+        <view class="picker">
+          {{time}}
+        </view>
+      </picker>
+    </view>
+    <view class="cu-form-group">
+      <view class="title">to</view>
+      <picker mode="time" value="{{time}}" start="09:01" end="19:01" bindchange="TimeChange">
+        <view class="picker">
+          {{time}}
+        </view>
+      </picker>
+    </view>
+    <view class="cu-form-group">
+      <view class="title">Adress</view>
+      <picker mode="region" bindchange="RegionChange" value="{{region}}" custom-item="{{customItem}}">
+        <view class="picker">
+          {{region[0]}}，{{region[1]}}，{{region[2]}}
+        </view>
+      </picker>
+    </view>
+    <!-- <view   class="cu-form-group">
+      <view class="title">phone number</view>
+      <input placeholder="your phone number"></input>
+      <button class="cu-btn bg-green shadow">verify</button>
+    </view> -->
+    
+    <view class="cu-form-group">
+      <view class="title">Phone number</view>
+      <input placeholder="输入框带标签"></input>
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-blue">
+          +86
+        </view>
+        <view class="cu-tag line-blue">
+          中国大陆
+        </view>
+      </view>
+    </view>  
+    <view id='formTitle'> Requirements </view>
+    <view class="cu-form-group margin-top">
+      <view class="title">School drop-off</view>
+      <switch></switch>
+    </view>
+    <view class="cu-form-group">
+      <view class="title">School Pick up</view>
+      <switch></switch>
+    </view>
+    <view class="cu-form-group">
+      <view class="title">Put to bed</view>
+      <switch></switch>
+    </view>
+    <view class="cu-form-group">
+      <view class="title">Potty trained</view>
+      <switch></switch>
+    </view>
+    <view class="cu-form-group">
+      <view class="title">babypool at mine</view>
+      <switch></switch>
+    </view>
+    <view class="cu-form-group">
+      <view class="title">join babypool</view>
+      <switch></switch>
+    </view>
+    <view class="cu-form-group">
+      <view class="title">food preparation</view>
+      <switch></switch>
+    </view>
+    
+    
+    <!-- !!!!! placeholder 在ios表现有偏移 建议使用 第一种样式 -->
+    
+  </form>
+  <view>
+      <button type='submit'>Search</button>
+  </view>
+    
+</view>
+
+
+<!-- <text>pages/bookSitter/bookSitter.wxml</text> -->

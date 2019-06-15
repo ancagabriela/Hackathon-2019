@@ -2,7 +2,8 @@
   "pages": [
     "pages/parentProfile/parentProfile",
     "pages/index/index",
-    "pages/requestBabysitter/requestBabysitter"
+    "pages/requestBabysitter/requestBabysitter",
+    "pages/bookSitter/bookSitter"
     
   ],
     "tabBar": {

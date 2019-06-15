@@ -1,0 +1,12 @@
+/* pages/bookSitter/bookSitter.wxss */
+item.none{
+  display: none;
+}
+.formWraper{
+  background-color: white;
+}
+#formTitle{
+  text-align: center;
+  padding: 20px;
+  size: 18px;
+}
