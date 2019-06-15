@@ -1,0 +1,124 @@
+<!--pages/parentProfile/parentProfile.wxml-->
+
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+	<view slot="backText">返回</view>
+	<view slot="content">表单</view>
+</cu-custom>
+<form>
+<view class="banner">
+  <!--<image style="scaleToFill" class="photo1" src="/images/parentprofile.jpeg"></image> -->
+  <text>Parent Profile</text>
+</view>
+	<view class="cu-form-group margin-top">
+		<view class="name">Full Name</view>
+		<input placeholder=" ..."></input>
+	</view>
+  <view class="cu-form-group">
+		<view class="title">Phone number</view>
+		<input placeholder=" ..."></input>
+		<view class="cu-capsule radius">
+			<view class="cu-tag bg-blue">
+				+86
+			</view>
+			<view class="cu-tag line-blue">
+				China
+			</view>
+		</view>
+	</view>
+  	<view class="cu-form-group">
+		<view class="title">Verification Code</view>
+		<input placeholder=" ..."></input>
+		<button class="cu-btn bg-green shadow">Verification Code</button>
+	</view>
+  <view class="cu-form-group">
+		<view class="title">Address</view>
+		<input placeholder=" ..."></input>
+		<text class="cuIcon-locationfill text-orange"></text>
+	</view>
+
+
+
+
+
+	<!--<radio-group class="block">
+		<view class="cu-form-group margin-top">
+			<view class="title">单选操作(radio)</view>
+			<radio checked></radio>
+		</view>
+		<view class="cu-form-group">
+			<view class="title">定义样式</view>
+			<radio class="radio"></radio>
+		</view>
+		<view class="cu-form-group">
+			<view class="title">定义颜色</view>
+			<view>
+				<radio class="blue radio"></radio>
+				<radio class="red margin-left-sm"></radio>
+			</view>
+		</view>
+	</radio-group>
+	<view class="cu-form-group margin-top">
+		<view class="title">复选选操作(checkbox)</view>
+		<checkbox></checkbox>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">定义形状</view>
+		<checkbox class="round" checked></checkbox>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">定义颜色</view>
+		<checkbox class="round blue" checked></checkbox>
+	</view>
+
+-->
+
+  </form>
+
+<!--<view class="addChild-button"> 
+<button type="mini">+ Add Child</button>
+</view> -->
+
+
+
+<!--
+<view class="cu-bar bg-white margin-top">
+  <view class="action">
+    <text class="cuIcon-title text-orange "></text> 普通窗口
+  </view>
+  <view class="action">
+    <button class="cu-btn bg-green shadow" bindtap="showModal" data-target="Modal">Modal</button>
+  </view>
+</view>
+<view class="cu-modal {{modalName=='Modal'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">Modal标题</view>
+      <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-red"></text>
+      </view>
+    </view>
+    <view class="padding-xl">
+      Modal 内容。
+    </view>
+  </view>
+</view>
+
+<view class="cu-bar bg-white margin-top">
+  <view class="action">
+    <text class="cuIcon-title text-orange "></text> 底部窗口
+  </view>
+  <view class="action">
+    <button class="cu-btn bg-green shadow" bindtap="showModal" data-target="bottomModal">Bottom</button>
+  </view>
+</view>
+<view class="cu-modal bottom-modal {{modalName=='bottomModal'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white">
+      <view class="action text-green">确定</view>
+      <view class="action text-blue" bindtap="hideModal">取消</view>
+    </view>
+    <view class="padding-xl">
+      Modal 内容。
+    </view>
+  </view>
+</view>-->

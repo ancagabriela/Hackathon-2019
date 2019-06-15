@@ -1,0 +1,13 @@
+/* pages/parentProfile/parentProfile.wxss */
+
+.banner {
+  text-align: center;
+  color:#ff036a; 
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.photo1 {
+  margin: 10%
+}

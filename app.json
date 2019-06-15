@@ -1,7 +1,26 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/parentProfile/parentProfile",
+    "pages/index/index",
+    "pages/requestBabysitter/requestBabysitter"
+    
   ],
+    "tabBar": {
+      "list": [
+        {
+          "pagePath": "pages/index/index",
+          "text": "首页"
+        },
+        {
+          "pagePath": "pages/parentProfile/parentProfile",
+          "text": "PP"
+        },
+        {
+          "pagePath": "pages/requestBabysitter/requestBabysitter",
+          "text": "RB"
+        }
+      ]
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
