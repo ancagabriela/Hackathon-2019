@@ -2,8 +2,11 @@
   "pages": [
     "pages/parentProfile/parentProfile",
     "pages/index/index",
-    "pages/resultBabysitter/resultBabysitter"
-    
+    "pages/resultBabysitter/resultBabysitter",
+    "pages/homePage/homePage",
+    "pages/welcome/welcome",
+    "pages/secondPage/secondPage",
+    "pages/swiper/swiper"
   ],
     "tabBar": {
       "list": [
@@ -18,6 +21,10 @@
         {
           "pagePath": "pages/resultBabysitter/resultBabysitter",
           "text": "RB"
+        },
+        {
+          "pagePath": "pages/swiper/swiper",
+          "text": "My profile"
         }
       ]
   },
