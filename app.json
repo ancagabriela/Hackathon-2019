@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/parentProfile/parentProfile",
+    "pages/nannyProfile/nannyProfile",
     "pages/index/index",
     "pages/resultBabysitter/resultBabysitter",
     "pages/homePage/homePage",
@@ -22,6 +23,10 @@
         {
           "pagePath": "pages/resultBabysitter/resultBabysitter",
           "text": "RB"
+        },
+        {
+          "pagePath": "pages/nannyProfile/nannyProfile",
+          "text": "NP"
         },
         {
           "pagePath": "pages/swiper/swiper",
