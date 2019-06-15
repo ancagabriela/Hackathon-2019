@@ -1,6 +1,10 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/homePage/homePage",
+    "pages/welcome/welcome",
+    "pages/secondPage/secondPage",
+    "pages/swiper/swiper"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -11,6 +15,18 @@
   },
   "usingComponents": {
     "cu-custom": "/colorui/components/cu-custom"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "Home"
+      },
+      {
+        "pagePath": "pages/swiper/swiper",
+        "text": "My profile"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }
