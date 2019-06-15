@@ -2,7 +2,7 @@
   "pages": [
     "pages/parentProfile/parentProfile",
     "pages/index/index",
-    "pages/requestBabysitter/requestBabysitter"
+    "pages/resultBabysitter/resultBabysitter"
     
   ],
     "tabBar": {
@@ -16,7 +16,7 @@
           "text": "PP"
         },
         {
-          "pagePath": "pages/requestBabysitter/requestBabysitter",
+          "pagePath": "pages/resultBabysitter/resultBabysitter",
           "text": "RB"
         }
       ]

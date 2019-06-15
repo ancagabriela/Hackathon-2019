@@ -1,4 +1,4 @@
-// pages/requestBabysitter/requestBabysitter.js
+// pages/resultBabysitter/resultBabysitter.js
 Page({
 
   /**
