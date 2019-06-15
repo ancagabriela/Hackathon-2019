@@ -1,0 +1,22 @@
+<cu-custom bgColor="bg-gradual-blue">
+  <view slot="content">Nanny Profile</view>
+</cu-custom>
+<form>
+<view class="cu-form-group margin-top">
+  <view class="title">Name</view>
+  <input placeholder=""></input>
+</view>
+
+	<view class="cu-form-group">
+		<view class="title">Phone</view>
+		<input type="digit" placeholder=""></input>
+	</view>
+
+<checkbox-group class="margin-top">
+<view class="cu-form-group" wx:for="{{languages}}">
+		<view class="title">{{item.label}}</view>
+		<checkbox checked="{{item.checked}}"></checkbox>
+	</view>
+  </checkbox-group>
+	
+</form>

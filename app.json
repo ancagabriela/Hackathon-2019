@@ -1,7 +1,20 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/nannyProfile/nannyProfile"
   ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/nannyProfile/nannyProfile",
+        "text": "NP"
+      }
+    ]
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
