@@ -1,43 +1,11 @@
 {
   "pages": [
+    "pages/swiper/swiper",
     "pages/parentProfile/parentProfile",
     "pages/nannyProfile/nannyProfile",
-    "pages/index/index",
     "pages/resultBabysitter/resultBabysitter",
-    "pages/homePage/homePage",
-    "pages/welcome/welcome",
-    "pages/secondPage/secondPage",
-    "pages/swiper/swiper",
     "pages/bookSitter/bookSitter"
   ],
-    "tabBar": {
-      "list": [
-        {
-          "pagePath": "pages/index/index",
-          "text": "首页"
-        },
-        {
-          "pagePath": "pages/parentProfile/parentProfile",
-          "text": "PP"
-        },
-        {
-          "pagePath": "pages/resultBabysitter/resultBabysitter",
-          "text": "RB"
-        },
-        {
-          "pagePath": "pages/nannyProfile/nannyProfile",
-          "text": "NP"
-        },
-        {
-          "pagePath": "pages/swiper/swiper",
-          "text": "My profile"
-        },
-        {
-          "pagePath": "pages/bookSitter/bookSitter",
-          "text": "Search Babysitter"
-        }
-      ]
-  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",

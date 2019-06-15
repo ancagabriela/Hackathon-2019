@@ -99,5 +99,11 @@ Page({
         swiperList: list
       })
     }
+  },
+  navigateToNannyProfile(e) {
+    wx.navigateTo({url:'/pages/nannyProfile/nannyProfile'})
+  },
+  navigateToParentProfile(e) {
+    wx.navigateTo({ url: '/pages/parentProfile/parentProfile' })
   }
 })

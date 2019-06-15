@@ -22,10 +22,10 @@ Spend free time in a meaningful way.
   <swiper-item>
   <view class="banner">
 <view class="flex padding-xl">
-  <view class="flex-sub  bg-cyan light padding-sm margin-xs text-center padding text-xl radius solid{{size?'xxl':''}}">I need a babysitter</view>
+  <button class="flex-sub  bg-cyan light padding-sm margin-xs text-center padding text-xl radius solid{{size?'xxl':''}}" bindtap="navigateToParentProfile">I need a babysitter</button>
 </view>
 <view class="flex padding-xl">
-  <view class="flex-sub  bg-cyan light padding-sm margin-xs text-center padding text-xl radius solid{{size?'xxl':''}}">I want to babysit</view>
+  <button class="flex-sub  bg-cyan light padding-sm margin-xs text-center padding text-xl radius solid{{size?'xxl':''}}" bindtap="navigateToNannyProfile">I want to babysit</button>
 </view>
 </view>
   </swiper-item>
