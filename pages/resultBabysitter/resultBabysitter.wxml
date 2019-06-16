@@ -1,2 +1,58 @@
 <!--pages/resultBabysitter/resultBabysitter.wxml-->
-<text>Available Babysitters</text>
+    
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">头像</view></cu-custom>
+<view class="cu-bar bg-white">
+  <view class="action">
+    <text class="cuIcon-title text-blue"></text>Available Babysitters
+  </view>
+</view>
+<view class="page">
+  <view class="cu-avatar xl round margin-left" style="background-image:url(https://images.unsplash.com/photo-1537735319956-df7db4b6a4e9?ixlib=rb-1.2.1&auto=format&fit=crop&w=742&q=80);">
+  
+  </view>
+  <view class='margin-left'><text>Emilia and Juan, 64 and 67, Grandparents
+  Rating: 4.5   50RMB/h
+  "Excellent babysitters. Kids in bed in minutes"</text></view>
+</view>
+
+<view class="page2">
+  <view class="cu-avatar xl round margin-left" style="background-image:url(https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80);">
+  
+  </view>
+  <view class='margin-left'><text>Sylvia, 24, Student
+  Rating: 4.0   50RMB/h
+  "Funny and full of energy"</text></view>
+</view>
+
+<view class="page3">
+  <view class="cu-avatar xl round margin-left" style="background-image:url(https://images.unsplash.com/photo-1506919258185-6078bba55d2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1115&q=80);">
+  
+  </view>
+  <view class='margin-left'><text>Stepahn, 34, Babypooling
+  Rating: 4.7   40RMB/h
+  "He knows many games and has a great humour"</text></view>
+</view>
+  
+
+
+
+
+
+
+
+
+
+<!--<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+	<view slot="backText">返回</view>
+	<view slot="content">表单</view>
+</cu-custom>
+<form>
+<view class="banner">
+  <image style="top" class="photo1" src="/images/girl.jpeg"></image> 
+  
+</view>
+	<view class="cu-form-group margin-top">
+		<view class="name">Full Name</view>
+		<input placeholder=" ..."></input>
+	</view>
+  </form>
