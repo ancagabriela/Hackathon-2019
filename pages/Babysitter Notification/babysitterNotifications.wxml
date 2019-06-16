@@ -1,0 +1,52 @@
+<!--pages/Babysitter Notification/babysitterNotifications.wxml-->
+<cu-custom bgColor="bg-gradual-blue" >
+  <view slot="backText">Back</view>
+  <view slot="content">Sitting Notifications</view>
+</cu-custom>
+<view class='bg-white '>
+<view class="cu-bar bg-white margin-top" wx:for='{{notifications}}'>
+  <view class="action">
+    <text class="cuIcon-title text-orange "></text> Baby Sitting Confirmation
+  </view>
+  <view class="action">
+    <button class="cu-btn bg-green shadow" bindtap="showNotificationsModal" data-index="{{index}}">OPEN</button>
+  </view>
+</view>
+  
+  <view class="cu-modal {{modalName=='DialogModal1'?'show':''}}">
+    <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">New Baby Sitting available</view>
+      <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-red"></text>
+      </view>
+  </view>
+    <view class="padding-xl">
+      <view>
+      <text class='cuIcon-time'></text> {{modalNotification.date}} {{modalNotification.time}}
+      </view>
+      <view>
+        <text class='cuIcon-location'></text> {{modalNotification.address}}
+      </view>
+      <view>
+        <view class='content'></view>
+        <view >
+          <text class='cuIcon-favorfill'></text>
+          <text class='cuIcon-favorfill'></text>
+          <text class='cuIcon-favorfill'></text>
+          <text class='cuIcon-favor'></text>
+          <text class='cuIcon-favor'></text>
+        </view>
+      </view>
+    </view>
+    <view class="cu-bar bg-white justify-end">
+      <view class="action">
+        <button class="cu-btn line-green text-green" bindtap="hideModal">Decline</button>
+        <button class="cu-btn bg-green margin-left" bindtap="hideModal">Accept</button>
+
+      </view>
+    </view>
+  </view>
+</view>
+  
+</view>

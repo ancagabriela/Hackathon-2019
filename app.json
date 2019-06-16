@@ -4,8 +4,29 @@
     "pages/parentProfile/parentProfile",
     "pages/nannyProfile/nannyProfile",
     "pages/resultBabysitter/resultBabysitter",
+    "pages/Babysitter Notification/babysitterNotifications",
     "pages/bookSitter/bookSitter"
   ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/parentProfile/parentProfile",
+        "text": "PP"
+      },
+      {
+        "pagePath": "pages/resultBabysitter/resultBabysitter",
+        "text": "RB"
+      },
+      {
+        "pagePath": "pages/swiper/swiper",
+        "text": "My profile"
+      },
+      {
+        "pagePath": "pages/Babysitter Notification/babysitterNotifications",
+        "text": "Notification"
+      }
+    ]
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",

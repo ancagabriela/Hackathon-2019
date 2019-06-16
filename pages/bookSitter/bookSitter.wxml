@@ -95,6 +95,47 @@
       <view class="title">food preparation</view>
       <switch></switch>
     </view>
+    <radio-group class="block">
+    <view class="title" id='formTitle'>Language preferences :</view>
+		<view class="cu-form-group margin-top">
+			<view class="title">English</view>
+      <switch></switch>
+			<!-- <radio class='radio green'> Yes</radio>
+      <radio class='radio red'> No</radio> -->
+		</view>
+    <view class="cu-form-group margin-top">
+			<view class="title">Chinese</view>
+			<switch></switch>
+		</view>
+    <view class="cu-form-group margin-top">
+			<view class="title">Japanese</view>
+			<switch></switch>
+		</view>
+    <view class="cu-form-group margin-top">
+			<view class="title">Spanish</view>
+			<switch></switch>
+		</view>
+    <view class="cu-form-group margin-top">
+			<view class="title">French</view>
+			<switch></switch>
+		</view>
+		<view class="cu-form-group margin-top">
+			<view class="title">German</view>
+			<switch></switch>
+		</view>
+    <view class="cu-form-group margin-top">
+			<view class="title">Italian</view>
+			<switch></switch>
+		</view>
+    <view class="cu-form-group margin-top">
+			<view class="title">Korean</view>
+			<switch></switch>
+		</view>
+    <view class="cu-form-group margin-top">
+			<view class="title">Arabic</view>
+			<switch></switch>
+		</view>
+	</radio-group>
     
     
     <!-- !!!!! placeholder 在ios表现有偏移 建议使用 第一种样式 -->
