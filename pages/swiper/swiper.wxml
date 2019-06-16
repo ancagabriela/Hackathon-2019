@@ -22,10 +22,11 @@ Spend free time in a meaningful way.
   <swiper-item>
   <view class="homePageSlide slide3 flex flex-direction align-center justify-center">
 <view class="flex">
-  <button class="flex-sub  bg-cyan light padding-sm margin-xs text-center padding text-xl radius solid{{size?'xxl':''}}" bindtap="navigateToParentProfile">I need a babysitter</button>
+ <!-- <button class="flex-sub  bg-cyan light padding-sm margin-xs text-center padding text-xl radius solid{{size?'xxl':''}}" bindtap="navigateToParentProfile">I need a babysitter</button>-->
+ <view bindtap="navigateToParentProfile" class='myButton margin-xl'>I NEED A BABYSITTER</view>
 </view>
 <view class="flex padding-xl">
-  <button class="flex-sub  bg-cyan light padding-sm margin-xs text-center padding text-xl radius solid{{size?'xxl':''}}" bindtap="navigateToNannyProfile">I want to babysit</button>
+  <view class="myButton margin-xl" bindtap="navigateToNannyProfile">I WANT TO BABYSIT</view>
 </view>
 </view>
   </swiper-item>
