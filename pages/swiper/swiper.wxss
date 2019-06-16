@@ -22,7 +22,7 @@
 }
 
 .slide2 {
-  color: black;
+  color: white;
   background-color: #F6D55C;
   font-size: 30px;
 }
@@ -30,5 +30,15 @@
 .slide3 {
   color: white;
   background-color: #3CAEA3;
-  font-size: 30px;
+  font-size: 50px;
+}
+
+.myButton {
+  border: none;
+  background: none;
+  padding: none;
+  font-size: 50px;
+  line-height: 1.2em;
+  font-family: inherit;
+  color: inherit;
 }
