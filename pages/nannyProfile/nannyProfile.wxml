@@ -1,0 +1,94 @@
+<cu-custom bgColor="bg-gradual-blue">
+  <view slot="content">Nanny Profile</view>
+</cu-custom>
+<form>
+<view class="cu-form-group margin-top">
+  <view class="title">Name</view>
+  <input placeholder=""></input>
+</view>
+<view class="cu-form-group">
+  <view class="title">Phone</view>
+  <input type="digit" placeholder=""></input>
+</view>
+<view class="cu-form-group">
+  <view class="title">Gender</view>
+  <switch class="switch-sex" checked="{{isMale}}"></switch>
+</view>
+<view class="cu-form-group">
+  <view class="title">Driving License</view>
+  <switch></switch>
+</view>
+<view class="cu-form-group">
+  <view class="title">Cooking</view>
+  <switch></switch>
+</view>
+
+<view class="cu-form-group margin-top">
+  <view class="title">Hourly Rate</view>
+  <input type="digit" placeholder=""></input>
+</view>
+
+<checkbox-group class="margin-top">
+<view class="cu-form-group" wx:for="{{languages}}" wx:key>
+		<view class="title">{{item.label}}</view>
+		<checkbox checked="{{item.checked}}"></checkbox>
+	</view>
+</checkbox-group>
+
+<view class="cu-form-group margin-top">
+  <view class="title">Available Times</view>
+  <button class="cu-btn bg-green shadow" bindtap="showModal" data-target="AddAvailableTime">Add</button>
+</view>
+<view class="cu-form-group" wx:for="{{availableTimes}}" wx:key>
+{{item.fromDate}} {{item.fromTime}} - {{item.toTime}}
+</view>
+
+
+</form>
+
+<view class="cu-modal {{modalName=='AddAvailableTime'?'show':''}}">
+  <view class="cu-dialog">
+<form bindsubmit='saveAddTime'>
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">Add Time</view>
+      <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-red"></text>
+      </view>
+    </view>
+    <view class="padding-xl">
+<view class="cu-form-group">
+  <view class="title">From</view>
+  <picker mode="date" value="{{addTimeForm.fromDate}}" start="2019-06-17" end="2020-09-01" name="fromDate" bindchange="dateTimeChange" data-target="addTimeForm.fromDate">
+    <view class="picker">
+      {{addTimeForm.fromDate}}
+    </view>
+  </picker>
+  <picker mode="time" value="{{addTimeForm.fromTime}}" start="00:00" end="23:30" name="fromTime" bindchange="dateTimeChange" data-target="addTimeForm.fromTime">
+    <view class="picker">
+      {{addTimeForm.fromTime}}
+    </view>
+  </picker>
+</view>
+<view class="cu-form-group">
+  <view class="title">To</view>
+  <picker mode="date" value="{{addTimeForm.toDate}}" start="2019-06-17" end="2020-09-01" name="toDate" bindchange="dateTimeChange" data-target="addTimeForm.toDate">
+    <view class="picker">
+      {{addTimeForm.toDate}}
+    </view>
+  </picker>
+  <picker mode="time" value="{{addTimeForm.toTime}}" start="00:00" end="23:30" name="toTime" bindchange="dateTimeChange" data-target="addTimeForm.toTime">
+    <view class="picker">
+      {{addTimeForm.toTime}}
+    </view>
+  </picker>
+</view>
+    </view>
+    <view class="cu-bar bg-white justify-end">
+      <view class="action">
+        <button class="cu-btn line-green text-green" bindtap="close">Back</button>
+        <button class="cu-btn bg-green margin-left" form-type='submit'>Add</button>
+      </view>
+    </view>
+    </form>
+</view>
+</view>

@@ -1,0 +1,32 @@
+<swiper class="screen-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" >
+  <swiper-item>
+    <view>
+      <view class='banner'>
+      <text>Welcome to</text>
+      <text>Mamager</text>
+      </view>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view class="secondPage">
+      <text>
+This mini program connects parents and babysitters on demand.
+
+Meet people in your community.
+
+Spend free time in a meaningful way.
+      </text>
+
+    </view>
+  </swiper-item>
+  <swiper-item>
+  <view class="banner">
+<view class="flex padding-xl">
+  <button class="flex-sub  bg-cyan light padding-sm margin-xs text-center padding text-xl radius solid{{size?'xxl':''}}" bindtap="navigateToParentProfile">I need a babysitter</button>
+</view>
+<view class="flex padding-xl">
+  <button class="flex-sub  bg-cyan light padding-sm margin-xs text-center padding text-xl radius solid{{size?'xxl':''}}" bindtap="navigateToNannyProfile">I want to babysit</button>
+</view>
+</view>
+  </swiper-item>
+</swiper>
