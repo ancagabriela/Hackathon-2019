@@ -26,7 +26,7 @@ Spend free time in a meaningful way.
  <view bindtap="navigateToParentProfile" class='myButton margin-xl'>I NEED A BABYSITTER</view>
 </view>
 <view class="flex padding-xl">
-  <view class="myButton margin-xl" bindtap="navigateToNannyProfile">I WANT TO BABYSIT</view>
+  <button class="myButton margin-xl" bindtap="navigateToNannyProfile">I WANT TO BABYSIT</button> 
 </view>
 </view>
   </swiper-item>
