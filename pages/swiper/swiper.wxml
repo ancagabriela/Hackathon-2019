@@ -1,14 +1,13 @@
 <swiper class="screen-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" >
   <swiper-item>
-    <view>
-      <view class='banner'>
+    <view class='homePageSlide slide1 flex flex-direction align-center justify-center'>
       <text>Welcome to</text>
       <text>Mamager</text>
-      </view>
     </view>
   </swiper-item>
+
   <swiper-item>
-    <view class="secondPage">
+    <view class="homePageSlide slide2 flex flex-direction align-center justify-center">
       <text>
 This mini program connects parents and babysitters on demand.
 
@@ -19,13 +18,15 @@ Spend free time in a meaningful way.
 
     </view>
   </swiper-item>
+
   <swiper-item>
-  <view class="banner">
-<view class="flex padding-xl">
-  <button class="flex-sub  bg-cyan light padding-sm margin-xs text-center padding text-xl radius solid{{size?'xxl':''}}" bindtap="navigateToParentProfile">I need a babysitter</button>
+  <view class="homePageSlide slide3 flex flex-direction align-center justify-center">
+<view class="flex">
+ <!-- <button class="flex-sub  bg-cyan light padding-sm margin-xs text-center padding text-xl radius solid{{size?'xxl':''}}" bindtap="navigateToParentProfile">I need a babysitter</button>-->
+ <view bindtap="navigateToParentProfile" class='myButton margin-xl'>I NEED A BABYSITTER</view>
 </view>
 <view class="flex padding-xl">
-  <button class="flex-sub  bg-cyan light padding-sm margin-xs text-center padding text-xl radius solid{{size?'xxl':''}}" bindtap="navigateToNannyProfile">I want to babysit</button>
+  <view class="myButton margin-xl" bindtap="navigateToNannyProfile">I WANT TO BABYSIT</view>
 </view>
 </view>
   </swiper-item>

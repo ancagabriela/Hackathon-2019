@@ -1,1 +1,22 @@
 /* pages/resultBabysitter/resultBabysitter.wxss */
+
+.page{
+  padding-top: 60rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.page2{
+  padding-top: 100rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.page3{
+  padding-top: 100rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}

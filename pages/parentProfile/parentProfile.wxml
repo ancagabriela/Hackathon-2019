@@ -1,21 +1,15 @@
-<!--pages/parentProfile/parentProfile.wxml-->
-
-<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
-	<view slot="backText">返回</view>
-	<view slot="content">表单</view>
+<cu-custom bgColor="bg-purple" isBack="{{true}}">
+	<view slot="backText">Back</view>
+	<view slot="content">Parent Profile</view>
 </cu-custom>
 <form>
-<view class="banner">
-  <!--<image style="scaleToFill" class="photo1" src="/images/parentprofile.jpeg"></image> -->
-  <text>Parent Profile</text>
-</view>
 	<view class="cu-form-group margin-top">
 		<view class="name">Full Name</view>
-		<input placeholder=" ..."></input>
+		<input placeholder=""></input>
 	</view>
   <view class="cu-form-group">
 		<view class="title">Phone number</view>
-		<input placeholder=" ..."></input>
+		<input placeholder=""></input>
 		<view class="cu-capsule radius">
 			<view class="cu-tag bg-blue">
 				+86
@@ -27,12 +21,12 @@
 	</view>
   	<view class="cu-form-group">
 		<view class="title">Verification Code</view>
-		<input placeholder=" ..."></input>
-		<button class="cu-btn bg-green shadow">Verification Code</button>
+		<input placeholder=""></input>
+		<button class="cu-btn bg-purple shadow">Verification Code</button>
 	</view>
   <view class="cu-form-group">
 		<view class="title">Address</view>
-		<input placeholder=" ..."></input>
+		<input placeholder=""></input>
 		<text class="cuIcon-locationfill text-orange"></text>
 	</view>
 
@@ -122,3 +116,7 @@
     </view>
   </view>
 </view>-->
+
+<view class='flex justify-center margin-top'>
+<button class="cu-btn bg-purple lg" ontap="navigateToSearch">Search Babysitter</button>
+</view>

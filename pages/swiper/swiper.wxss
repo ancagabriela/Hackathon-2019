@@ -8,72 +8,37 @@
   height: 100vh;
 }
 
-  /* pages/welcome/welcome.wxss */
-.banner {
-  color: white;
-  text-align: center;
-  height: 100vh;
-  /* "vh" is a special unit to calculate the viewport height (screen size) */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  /* "Flexbox" is a CSS positioning method to align all items, here in a column. Look it up! */
-  /*
-  background-image: url('https://cloud-minapp-13908.cloud.ifanrusercontent.com/1fxsJQzleumTqmCq.jpg');
-  */
-  /* We're loading this image from minapp.com */
-  background-position: center -30px;
-  background-repeat: no-repeat;
-  background-size: cover !important;
-  background-color: lightpink;
+.homePageSlide {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  height: 100%;
+}
+
+  /* pages/welcome/welcome.wxss */
+.slide1 {
+  color: white;
+  background-color: #ED553B;
   font-size: 50px;
-  padding:30px;
 }
 
-.secondPage {
+.slide2 {
   color: white;
-  text-align: center;
-  height: 100vh;
-  /* "vh" is a special unit to calculate the viewport height (screen size) */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  /* "Flexbox" is a CSS positioning method to align all items, here in a column. Look it up! */
-  /*
-  background-image: url('https://cloud-minapp-13908.cloud.ifanrusercontent.com/1fxsJQzleumTqmCq.jpg');
-  */
-  /* We're loading this image from minapp.com */
-  background-position: center -30px;
-  background-repeat: no-repeat;
-  background-size: cover !important;
-  background-color: lightpink;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #F6D55C;
   font-size: 30px;
-  padding:30px;
 }
 
-.thirdPage {
+.slide3 {
   color: white;
-  text-align: center;
-  height: 100vh;
-  /* "vh" is a special unit to calculate the viewport height (screen size) */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  /* "Flexbox" is a CSS positioning method to align all items, here in a column. Look it up! */
-  /*
-  background-image: url('https://cloud-minapp-13908.cloud.ifanrusercontent.com/1fxsJQzleumTqmCq.jpg');
-  */
-  /* We're loading this image from minapp.com */
-  background-position: center -30px;
-  background-repeat: no-repeat;
-  background-size: cover !important;
-  background-color: lightpink;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 30px;
-  padding:30px;
+  background-color: #3CAEA3;
+  font-size: 50px;
+}
+
+.myButton {
+  border: none;
+  background: none;
+  padding: none;
+  font-size: 50px;
+  line-height: 1.2em;
+  font-family: inherit;
+  color: inherit;
 }
