@@ -1,13 +1,14 @@
-<cu-custom bgColor="bg-gradual-blue">
-  <view slot="content">Nanny Profile</view>
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">back</view>
+  <view slot="content">Babysitter Profile</view>
 </cu-custom>
 <form>
 <view class="cu-form-group margin-top">
-  <view class="title">Name</view>
+  <view class="title">Full Name</view>
   <input placeholder=""></input>
 </view>
 <view class="cu-form-group">
-  <view class="title">Phone</view>
+  <view class="title">Phone number</view>
   <input type="digit" placeholder=""></input>
 </view>
 <view class="cu-form-group">
