@@ -97,5 +97,10 @@ onLoad() {
         swiperList: list
       })
     }
+  },
+  navigateToResult() {
+    wx.navigateTo({ url: '/pages/resultBabysitter/resultBabysitter' })
   }
+
+
 })

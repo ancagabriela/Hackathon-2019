@@ -130,7 +130,7 @@
     
   </form>
   <view class='flex justify-center margin-top'>
-      <button class="cu-btn bg-purple lg" type='submit'>Search</button>
+      <button class="cu-btn bg-purple lg" ontap="navigateToResult" type='submit'>Search</button>
   </view>
     
 </view>
