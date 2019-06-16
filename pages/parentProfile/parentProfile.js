@@ -91,5 +91,9 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  navigateToSearch() {
+    wx.navigateTo({url:'/pages/bookSitter/bookSitter'})
   }
 })

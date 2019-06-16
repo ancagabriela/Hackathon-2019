@@ -122,3 +122,7 @@
     </view>
   </view>
 </view>-->
+
+<view class='flex justify-center margin-top'>
+<button class="cu-btn bg-green lg" ontap="navigateToSearch">Search Babysitter</button>
+</view>
