@@ -1,20 +1,11 @@
 <!--pages/bookSitter/bookSitter.wxml-->
-<cu-custom bgColor="bg-gradual-blue" >
-  <view slot="backText">Back</view>
-  <view slot="content">Book a sitter</view>
+<cu-custom bgColor="bg-purple" isBack="{{true}}">
+	<view slot="backText">Back</view>
+  <view slot="content">Book a Babysitter</view>
 </cu-custom>
-<swiper class="card-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
-  <swiper-item wx:for="{{kidsInfo}}" wx:key class="{{cardCur==index?'cur':''}}">
-    <view class="swiper-item">
-      <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
-      <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
-    </view>
-  </swiper-item>
-</swiper>
 
 <!-- form for posting baby sitting -->
 <view class='formWraper'>  
-  <view id='formTitle'>I need a babysitter</view>
   <form>
     <view class="cu-form-group">
       <view class="title">Date</view>
@@ -25,7 +16,7 @@
       </picker>
     </view>
     <view class="cu-form-group">
-      <view class="title">from</view>
+      <view class="title">From</view>
       <picker mode="time" value="{{time}}" start="09:01" end="19:01" bindchange="TimeChange">
         <view class="picker">
           {{time}}
@@ -33,7 +24,7 @@
       </picker>
     </view>
     <view class="cu-form-group">
-      <view class="title">to</view>
+      <view class="title">To</view>
       <picker mode="time" value="{{time}}" start="09:01" end="19:01" bindchange="TimeChange">
         <view class="picker">
           {{time}}
@@ -41,13 +32,10 @@
       </picker>
     </view>
     <view class="cu-form-group">
-      <view class="title">Adress</view>
-      <picker mode="region" bindchange="RegionChange" value="{{region}}" custom-item="{{customItem}}">
-        <view class="picker">
-          {{region[0]}}，{{region[1]}}，{{region[2]}}
-        </view>
-      </picker>
-    </view>
+		<view class="title">Address</view>
+		<input placeholder=""></input>
+		<text class="cuIcon-locationfill text-orange"></text>
+	</view>
     <!-- <view   class="cu-form-group">
       <view class="title">phone number</view>
       <input placeholder="your phone number"></input>
@@ -56,13 +44,13 @@
     
     <view class="cu-form-group">
       <view class="title">Phone number</view>
-      <input placeholder="输入框带标签"></input>
+      <input placeholder=""></input>
       <view class="cu-capsule radius">
         <view class="cu-tag bg-blue">
           +86
         </view>
         <view class="cu-tag line-blue">
-          中国大陆
+          China
         </view>
       </view>
     </view>  
@@ -84,15 +72,15 @@
       <switch></switch>
     </view>
     <view class="cu-form-group">
-      <view class="title">babypool at mine</view>
+      <view class="title">Babypool at mine</view>
       <switch></switch>
     </view>
     <view class="cu-form-group">
-      <view class="title">join babypool</view>
+      <view class="title">Join babypool</view>
       <switch></switch>
     </view>
     <view class="cu-form-group">
-      <view class="title">food preparation</view>
+      <view class="title">Food preparation</view>
       <switch></switch>
     </view>
     
