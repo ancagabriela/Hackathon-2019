@@ -88,8 +88,8 @@
     <!-- !!!!! placeholder 在ios表现有偏移 建议使用 第一种样式 -->
     
   </form>
-  <view>
-      <button type='submit'>Search</button>
+  <view class='flex justify-center margin-top'>
+      <button class="cu-btn bg-purple lg" type='submit'>Search</button>
   </view>
     
 </view>
