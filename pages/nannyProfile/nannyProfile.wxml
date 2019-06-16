@@ -1,4 +1,4 @@
-<cu-custom bgColor="bg-gradual-blue">
+<cu-custom bgColor="bg-purple">
   <view slot="content">Nanny Profile</view>
 </cu-custom>
 <form>
@@ -37,7 +37,7 @@
 
 <view class="cu-form-group margin-top">
   <view class="title">Available Times</view>
-  <button class="cu-btn bg-green shadow" bindtap="showModal" data-target="AddAvailableTime">Add</button>
+  <button class="cu-btn bg-purple shadow" bindtap="showModal" data-target="AddAvailableTime">Add</button>
 </view>
 <view class="cu-form-group" wx:for="{{availableTimes}}" wx:key>
 {{item.fromDate}} {{item.fromTime}} - {{item.toTime}}
@@ -85,7 +85,7 @@
     </view>
     <view class="cu-bar bg-white justify-end">
       <view class="action">
-        <button class="cu-btn bg-green margin-left" form-type='submit'>Add</button>
+        <button class="cu-btn bg-purple margin-left" form-type='submit'>Add</button>
       </view>
     </view>
     </form>

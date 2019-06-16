@@ -1,6 +1,6 @@
 <!--pages/parentProfile/parentProfile.wxml-->
 
-<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+<cu-custom bgColor="bg-purple" isBack="{{true}}">
 	<view slot="backText">返回</view>
 	<view slot="content">表单</view>
 </cu-custom>
@@ -28,7 +28,7 @@
   	<view class="cu-form-group">
 		<view class="title">Verification Code</view>
 		<input placeholder=" ..."></input>
-		<button class="cu-btn bg-green shadow">Verification Code</button>
+		<button class="cu-btn bg-purple shadow">Verification Code</button>
 	</view>
   <view class="cu-form-group">
 		<view class="title">Address</view>
@@ -124,5 +124,5 @@
 </view>-->
 
 <view class='flex justify-center margin-top'>
-<button class="cu-btn bg-green lg" ontap="navigateToSearch">Search Babysitter</button>
+<button class="cu-btn bg-purple lg" ontap="navigateToSearch">Search Babysitter</button>
 </view>
