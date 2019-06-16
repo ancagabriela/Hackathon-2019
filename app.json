@@ -1,17 +1,10 @@
 {
   "pages": [
-<<<<<<< HEAD
-    "pages/resultBabysitter/resultBabysitter",
-    "pages/parentProfile/parentProfile",
-    "pages/index/index"
-    
-=======
     "pages/swiper/swiper",
     "pages/parentProfile/parentProfile",
     "pages/nannyProfile/nannyProfile",
     "pages/resultBabysitter/resultBabysitter",
     "pages/bookSitter/bookSitter"
->>>>>>> 072876e7bbf47ebb4dfbe7052eb030c406622102
   ],
   "window": {
     "backgroundTextStyle": "light",
