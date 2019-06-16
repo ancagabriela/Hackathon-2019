@@ -4,7 +4,7 @@
   <view slot="content">Sitting Notifications</view>
 </cu-custom>
 <view class='bg-white '>
-<view class="cu-bar bg-white margin-top" wx:for='{{notifications}}'>
+<view class="cu-bar bg-white margin-top" wx:key wx:for='{{notifications}}'>
   <view class="action">
     <text class="cuIcon-title text-orange "></text> Baby Sitting Confirmation
   </view>
